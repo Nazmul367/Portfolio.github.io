@@ -1,0 +1,172 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+a{
+    color: #333;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+}
+a:hover { text-decoration: none ; color: #fff; }
+
+.header-area{
+    padding: 25px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    content: "";
+    z-index: 99;
+}
+
+.bg-1  {
+    background-image: url(../img/bg-2.jpg);
+}
+.bg-2 {
+    background-image: url(../img/bg-1.jpg);
+}
+.bg-3 {
+    background-image: url(../img/bg-3.jpg);
+}
+.single-slide-item {
+    padding-top: 180px;
+    padding-bottom: 70px;
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+}
+.slide-text {
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 70px;
+    padding-top: 50px;
+    padding-right: 90px;
+    padding-bottom: 70px;
+}
+.slide-text:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    opacity: .5;
+    z-index: -1;
+    border-radius: 6px;
+}
+.slide-text h2 {
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+.boxed-btn {
+    color: #fff;
+    background: #ef800d;
+    padding: 10px 26px;
+    border-radius: 3px;
+    display: inline-block;
+    font-weight: 700;
+    transition: .4s;
+}
+.slide-text .boxed-btn {
+    margin-top: 18px;
+}
+.boxed-btn:hover {
+    color: #fff;
+    background: green;
+}
+.logo img {
+    max-width: 60px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(45deg);
+}
+.logo {
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    padding-left: 90px;
+    padding-top: 0;
+    padding-bottom: 26px;
+}
+.logo span {
+    font-size: 16px;
+    display: block;
+    font-weight: 400;
+	font-style: italic;
+}
+.right-contact-box {
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    padding-left: 30px;
+    margin-left: 40px;
+    margin-top: 0;
+}
+.right-contact-box i.fa {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 24px;
+}
+.homepage-slides .owl-nav div{
+	position:absolute;
+	left:60px;
+	top: 50%;
+	font-size:50px;
+	font-weight:60px;
+	opacity:0;
+	transition:.6s;
+}
+.homepage-slides .owl-nav div.owl-next{
+	left:auto;
+	right:50px;
+}
+.homepage-slides:hover .owl-nav div{
+	opacity:.7;
+}
+.homepage-slides .owl-dots div{
+	background:#fff;
+	height:16px;
+	width:16px;
+	display:inline-block;
+	margin:4px;
+	border-radius:50%;
+}
+.homepage-slides .owl-dots{
+	position:absolute;
+	left:0;
+	bottom:25px;
+	text-align:center;
+	width:100%;
+}
+.homepage-slides .owl-dots div.active{
+	background:#ef800d;
+}
